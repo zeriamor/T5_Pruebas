@@ -1,5 +1,5 @@
 # T5_Pruebas
-### Ejercicio 1 - calcularPrecioFinal()
+### Ejercicio 1 
 
 **Método:**
 ```java
@@ -45,3 +45,29 @@ precioBase >= 0;
 descuento esté entre 0 y 100;
 si no, lanzar IllegalArgumentException
 */
+
+### Ejercicio 4
+**Método:**
+```java
+public static int maximo(int[] datos) {
+    int max = 0;
+     for (int i = 0; i < datos.length; i++) {
+        if (datos[i] > max) {
+         max = datos[i];
+         }
+       }
+       return max;
+}
+//El fallo principal: Inicializar max = 0 asume que habrá números positivos.
+
+Entrada (datos)	  Resultado 	Resultado   Tipo de fallo
+                  obtenido      correcto
+[-5, -3, -7]	  0	            -3	        Lógico,El método devuelve 0 porque 
+                                            empieza con max=0, pero el máximo real es -3
+                                            
+[-10]	          0	            -10	        Lógico, con un solo elemento negativo,
+                                            debería devolver -10, pero devuelve 0
+                                            
+[ ](array vacío)  0	            Excepción	De funcionalidad, un array
+                                            vacío tiene máximo; debería lanzar 
+                                            excepción, no devolver 0
