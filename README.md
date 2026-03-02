@@ -97,3 +97,14 @@ for (int i = 1; i < datos.length; i++) {
     }
     return max;
     }
+    
+    ### Ejercicio 6
+    
+    public static int[] ordenar(int[] datos) {
+    // algoritmo desconocido
+}
+1: El array debe estar ordenado de menor a mayor(Para todo i: a[i] <= a[i+1])
+2: Debe tener la misma longitud que el original(resultado.length == datos.length)
+3: Debe contener los mismos elementos(Si entra [2, 2, 5], sale [2, 2, 5] y no, [2, 5, 5])
+
+
