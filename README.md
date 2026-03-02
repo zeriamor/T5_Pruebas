@@ -108,3 +108,8 @@ for (int i = 1; i < datos.length; i++) {
 3: Debe contener los mismos elementos(Si entra [2, 2, 5], sale [2, 2, 5] y no, [2, 5, 5])
 
 
+### Ejercicio 7
+
+Los oraculos por propiedades son una mejor opción por que la validación es mas robusta y flexible.
+No siempre conocemos el funcionamiento interno del código es así que aunque se modifique el algoritmo,
+el resultado sique siendo correcto mientras cumpla las reglas establecidas.
