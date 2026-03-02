@@ -113,3 +113,25 @@ for (int i = 1; i < datos.length; i++) {
 Los oraculos por propiedades son una mejor opción por que la validación es mas robusta y flexible.
 No siempre conocemos el funcionamiento interno del código es así que aunque se modifique el algoritmo,
 el resultado sique siendo correcto mientras cumpla las reglas establecidas.
+
+### Ejercicio 8 
+
+**Método:**
+
+public static String clasificarEdad(int edad) {
+    if (edad < 0) {                 
+        return "ERROR";
+    } else if (edad < 12) {        
+        return "NIÑO";
+    } else if (edad < 18) {        
+        return "ADOLESCENTE";
+    } else {                         
+        return "ADULTO";
+    }
+}
+Mediante la complejidad ciclomática se deduce que el numero de tests necesarios es 4.
+Empezamos con: 1
+    • if (edad < 0) → +1
+    • else if (edad < 12) → +1
+    • else if (edad < 18) → +1
+    • Total = 4 caminos independientes
