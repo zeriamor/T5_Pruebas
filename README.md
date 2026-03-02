@@ -27,3 +27,21 @@ El método permite descuentos superiores al 100%, dando precios negativos. Por e
 
 **¿El método debería permitir esos valores?**
 No, en un sistema real no tendría sentido un precio negativo ni un descuento negativo. Lo lógico sería validar las entradas y lanzar una excepción si son inválidas.
+
+### Ejercicio 3 - Mejora del método
+
+```java
+public static int calcularPrecioFinal(int precioBase, int descuento) {
+    if (precioBase < 0) {
+        throw new IllegalArgumentException("El precio base no puede ser negativo");
+    }
+    if (descuento < 0 || descuento > 100) {
+        throw new IllegalArgumentException("El descuento debe estar entre 0 y 100");
+    }
+    return precioBase - (precioBase * descuento / 100);
+}
+/*Así validamos que:
+precioBase >= 0;
+descuento esté entre 0 y 100;
+si no, lanzar IllegalArgumentException
+*/
