@@ -145,3 +145,36 @@ TC02	7	        "NIÑO"	        Camino 2 (0-11)
 TC03	15	        "ADOLESCENTE"	Camino 3 (12-17)
 TC04	25	        "ADULTO"	    Camino 4 (≥ 18)
 
+
+### Ejercicio 10
+
+**Criterios de priorización:**
+    - Partes más críticas (dinero, datos, seguridad)
+    - Partes más usadas
+    - Partes más propensas a fallar
+    //Página29
+
+
+**Pago con tarjeta - Prioridad 1 (Máxima)**
+    Maneja transacciones económicas reales
+    Crítico para el negocio
+    Alto riesgo si falla
+
+**Login - Prioridad 2**
+    Puerta de acceso al sistema
+    Protege datos de usuarios
+    Seguridad crítica
+
+**Recuperar contraseña - Prioridad 3**
+    Relacionado con seguridad
+    Puede comprometer cuentas
+
+**Mostrar catálogo - Prioridad 4**
+    Funcionalidad muy usada
+    Bajo riesgo económico
+
+**Cambiar avatar - Prioridad 5**
+    Solo afecta a estética
+    No impacta en negocio
+
+
