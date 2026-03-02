@@ -135,3 +135,13 @@ Empezamos con: 1
     • else if (edad < 12) → +1
     • else if (edad < 18) → +1
     • Total = 4 caminos independientes
+    
+### Ejercicio 9 
+
+ID	    Entrada	    Esperado	    Camino que cubre
+
+TC01	-3	        "ERROR"	        Camino 1 (edad < 0)
+TC02	7	        "NIÑO"	        Camino 2 (0-11)
+TC03	15	        "ADOLESCENTE"	Camino 3 (12-17)
+TC04	25	        "ADULTO"	    Camino 4 (≥ 18)
+
