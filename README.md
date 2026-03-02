@@ -71,3 +71,29 @@ Entrada (datos)	  Resultado 	Resultado   Tipo de fallo
 [ ](array vacío)  0	            Excepción	De funcionalidad, un array
                                             vacío tiene máximo; debería lanzar 
                                             excepción, no devolver 0
+### Ejercicio 5
+**Método:**
+```java                                            
+
+public static int maximo(int[] datos) {
+
+// Validar que el array no sea null ni vacío
+    
+    if (datos == null || datos.length == 0) {
+        throw new IllegalArgumentException("El array no puede ser null o vacío");
+}
+
+// Inicializar max con el PRIMER elemento del array[0]
+
+int max = datos[0];
+
+// Recorrer desde el SEGUNDO elemento [1]
+ 
+for (int i = 1; i < datos.length; i++) {
+       
+        if (datos[i] > max) {
+            max = datos[i];
+        }
+    }
+    return max;
+    }
